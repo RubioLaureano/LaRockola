@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Rockola - Contacto & FAQ</title>
+    <link rel="icon" href="./images/lricon.ico" />
+    <link rel="stylesheet" href="./styles/formulario.css" />
+    <script
+      src="https://kit.fontawesome.com/bd6bb5de35.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a class="logo a_header_y_footer" href="home.html" id="logoHeader">
+        <!-- Acá logo y su ID para que en el CSS haga el "breathe"-->
+        <img src="images/logotest.png" alt="Logo Rockola" />
+        <h2 class="nombre_pagina">LA ROCKOLA</h2>
+      </a>
+      <nav class="nav_header">
+        <a href="home.html" class="nav-link nav_home a_header_y_footer"
+          ><i class="iconos_nav fa-solid fa-house"></i>Home</a
+        >
+        <a href="noticias.html" class="nav-link nav_news a_header_y_footer"
+          ><i class="iconos_nav fa-solid fa-newspaper"></i>Noticias</a
+        >
+        <a href="ranking.html" class="nav-link nav_ranks a_header_y_footer"
+          ><i class="iconos_nav fa-solid fa-ranking-star"></i>Recomendados</a
+        >
+        <a href="formulario.html" class="nav-link nav_faqs a_header_y_footer"
+          ><i class="iconos_nav fa-solid fa-envelope"></i>Contacto & FAQ</a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <section id="sectionPreForm">
+        <p id="parrafoPreForm">
+          ► En caso de que guste contactarnos puede utilizar el siguiente
+          formulario, aún así le recomendamos revisar las preguntas frecuentes
+          antes de usarlo ◄
+        </p>
+      </section>
+
+      <section class="faq-section" id="link_faq_section">
+        <h1 class="titulo_faq">Preguntas Frecuentes</h1>
+        <ul class="faq">
+          <li>
+            <section class="pregunta">
+              <span class="flechita"></span>
+              <span class="preguta_faq">¿QUIENES HICIMOS LA PÁGINA?</span>
+            </section>
+            <section class="respuesta">
+              <p class="respuesta_faq">
+                El grupo fue conformado durante el transcurso del programa "Codo
+                a Codo 4.0" y lo componen: Juan Pablo Milano, Sebastián Bravo,
+                Aaron E. Busto y Laureano Rubio.
+              </p>
+            </section>
+          </li>
+          <li>
+            <section class="pregunta">
+              <span class="flechita"></span>
+              <span class="preguta_faq">¿QUIÉN SE ENCARGÓ DE QUÉ?</span>
+            </section>
+            <section class="respuesta">
+              <p class="respuesta_faq">
+                La página la hicimos entre todos, y cada cual tocó un poco de
+                todo. Los highlights son que el Header y Footer fueron hechos
+                enteros por Aaron, la API de noticias la conectó Laureano,
+                Juampa organizó todo magistralmente y Seba rindió cinco finales
+                en el transcurso.
+              </p>
+            </section>
+          </li>
+          <li>
+            <section class="pregunta">
+              <span class="flechita"></span>
+              <span class="preguta_faq"
+                >¿CADA CUANTO ACTUALIZAN LA INFORMACIÓN?</span
+              >
+            </section>
+            <section class="respuesta">
+              <p class="respuesta_faq">
+                La información se actualiza automáticamente mediante la API de
+                NewsAPI.org
+              </p>
+            </section>
+          </li>
+          <li>
+            <section class="pregunta">
+              <span class="flechita"></span>
+              <span class="preguta_faq"
+                >¿QUÉ HAGO SI TENGO ALGÚN PROBLEMA EN LA PÁGINA?</span
+              >
+            </section>
+            <section class="respuesta">
+              <p class="respuesta_faq">
+                Si tenes un problema que no se soluciona reiniciando la página
+                (Alt + F4), te recomendamos contactarnos a través del
+                formulario. Por favor, comentanos lo más detallado posible tu
+                problema (funciona de verdad!).
+              </p>
+            </section>
+          </li>
+          <li>
+            <section class="pregunta">
+              <span class="flechita"></span>
+              <span class="preguta_faq"
+                >¿POR QUÉ HACER UNA PÁGINA DE NOTICIAS Y RANKINGS Y NO UNA QUE
+                REPRODUZCA MÚSICA?</span
+              >
+            </section>
+            <section class="respuesta">
+              <p class="respuesta_faq">
+                Plot twist: ahora sí reproduce música y no tiene rankings.
+              </p>
+            </section>
+          </li>
+        </ul>
+      </section>
+
+      <form action="#" method="get" class="formulario" id="formulario">
+        <!-- get por que no está funcionando. si no deberia ir post?-->
+        <fieldset>
+          <section class="datosPersonales">
+            <legend>Datos Personales</legend>
+            <p id="infoContacto">
+              Estos datos son meramente para el contacto y no seran públicos.
+            </p>
+            <section id="sectionName">
+              <label for="name">Nombre: </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                maxlength="42"
+                minlength="2"
+                required
+              />
+            </section>
+
+            <section id="sectionLastname">
+              <label for="lastname">Apellido: </label>
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                maxlength="42"
+                minlength="2"
+                required
+              />
+            </section>
+
+            <section id="sectionDate">
+              <label for="date">Fecha de Nacimiento:</label>
+              <input
+                type="date"
+                id="date"
+                name="date"
+                min="1910-01-01"
+                max="2023-01-01"
+                required
+              />
+            </section>
+
+            <section id="sectionEmail">
+              <label for="email">Correo Electronico: </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="ej.:juancarlo@mail.com"
+                required
+              />
+            </section>
+          </section>
+        </fieldset>
+
+        <fieldset>
+          <section class="datosMotivos">
+            <legend>Sobre el contacto</legend>
+            <p id="infoContacto">
+              Estos datos pueden ser usados para motivos estadisticos
+            </p>
+            <section id="sectionReason">
+              <label for="reason">Motivo del contacto</label>
+              <select name="reason" id="reason">
+                <option value="select">Elegir Motivo</option>
+                <option value="report">Bug/Error</option>
+                <option value="collab">Colaborar</option>
+                <option value="complaint">Quejas</option>
+                <option value="other">Otros</option>
+              </select>
+            </section>
+            <section id="sectionComments">
+              <label for="comments">Expanda sus motivos del contacto: </label>
+              <textarea
+                name="comments"
+                id="comments"
+                cols="21"
+                rows="6"
+                maxlength="300"
+              ></textarea>
+            </section>
+          </section>
+        </fieldset>
+        <section class="botones">
+          <button type="reset">Reiniciar</button>
+          <button type="button" value="Enviar" onclick="validarForm()">
+            Enviar
+          </button>
+        </section>
+      </form>
+    </main>
+
+    <footer>
+      <section id="section_row_footer">
+        <section id="section_footer_navega">
+          <h3 class="titulos_footer">Navega!</h3>
+          <a href="home.html">Home</a>
+          <a href="noticias.html">Noticias</a>
+          <a href="ranking.html">Recomendados</a>
+        </section>
+        <section id="section_footer_contacto">
+          <h3 class="titulos_footer">Contactanos!</h3>
+          <a href="./formulario.html#link_faq_section">FAQ</a>
+          <a href="./formulario.html#formulario">Contacto</a>
+        </section>
+        <section id="section_footer_redes">
+          <h3 class="titulos_footer">Seguinos!</h3>
+          <a
+            class="a_header_y_footer"
+            href="https://www.facebook.com/"
+            target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            class="a_header_y_footer"
+            href="https://www.instagram.com/"
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            class="a_header_y_footer"
+            href="https://www.twitter.com/"
+            target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </section>
+        <section id="section_footer_copyright">
+          <p>Codo a Codo 4.0 - Mayo 2023 - Comisión 23038</p>
+        </section>
+      </section>
+    </footer>
+  </body>
+  <script src="./js/forms.js"></script>
+</html>

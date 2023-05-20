@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,wght@0,400;1,200&family=Shadows+Into+Light&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Pathway Extreme", sans-serif;
+}
+
+/* ESTE ES EL BODY DE NOTICIAS (por las dudas de comodín)*/
+body {
+  background-image: url(/images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #262a62;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#primerLinea {
+  /* ESTO ES TEMPORAL PAPU */
+  color: rgb(252, 255, 252);
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  border: 5px solid rgb(15, 247, 15);
+  border-radius: 1rem;
+}
+
+#segundaLinea {
+  color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+  margin-bottom: 1rem;
+  color: rgb(82, 248, 82);
+}
+
+.imagenHome {
+  max-width: 100%;
+  height: 100%;
+}
+
+#caja1,
+#caja2,
+#caja3 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+}
+#imagenCaja1,
+#imagenCaja2 {
+  display: flex;
+}
+#caja1,
+#caja2,
+#caja3 {
+  margin: 2rem;
+  border: 5px solid rgb(2, 255, 2);
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+#caja1_p,
+#caja2_p,
+#caja3_p {
+  display: flex;
+  margin: 0.4rem;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-style: bold;
+  color: rgb(0, 255, 13);
+  text-align: center;
+}
+
+#caja3_p {
+  margin-top: 0.2rem;
+}
+
+#section_button_caja1,
+#section_button_caja2,
+#section_button_caja3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+#section_button_caja1 button,
+#section_button_caja2 button,
+#section_button_caja3 button {
+  border: 2px solid rgb(72, 255, 0);
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  transform: scale(130%);
+}
+
+#section_button_caja1 button:hover {
+  background-color: rgb(87, 240, 112);
+  transform: scale(150%);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#section_button_caja2 button:hover {
+  background-color: rgb(87, 240, 112);
+  transform: scale(150%);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#section_button_caja3 button:hover {
+  background-color: rgb(87, 240, 112);
+  transform: scale(150%);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+/*-----------------------
+-------------------------
+A PARTIR DE ACÁ FOOTER
+-------------------------
+------------------------*/
+
+footer {
+  display: flex;
+  background-color: black;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+#section_row_footer {
+  display: flex;
+  background-color: red;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#section_footer_navega,
+#section_footer_contacto,
+#section_footer_redes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  background-color: red;
+  order: 1;
+  margin: 0.3rem;
+  padding: 0.5rem;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+#section_footer_contacto {
+  background-color: red;
+}
+
+#section_footer_redes {
+  background-color: red;
+}
+
+#section_footer_copyright {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  order: 2;
+}
+
+#section_footer_copyright p {
+  display: flex;
+  text-align: center;
+}
+
+@media screen and (min-width: 790px) and (max-width: 1023px) {
+  #section_footer_navega,
+  #section_footer_contacto,
+  #section_footer_redes {
+    width: 25%;
+    display: flex;
+  }
+  #lineaBienvenida,
+  #caja1,
+  #caja2,
+  #caja3 {
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  #lineaBienvenida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #caja1,
+  #caja2,
+  #caja3 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  #caja1_p,
+  #caja2_p,
+  #caja3_p {
+    text-align: left;
+    width: 80%;
+    height: 50%;
+  }
+
+  #section_button_caja1,
+  #section_button_caja2,
+  #section_button_caja3{
+    width: 50%;
+    height: auto;
+    display:flex;
+    justify-content: right;
+    padding-right: 0.2rem;
+}
+
+
+
+  .imagenHome {
+    flex:1;
+    min-width: 230px;
+    min-height: auto;
+    max-height: 300px;
+  }
+
+}
+
+@media screen and (min-width: 1635px) {
+  #section_footer_navega,
+  #section_footer_contacto,
+  #section_footer_redes {
+    width: 30%;
+    display: flex;
+  }
+}

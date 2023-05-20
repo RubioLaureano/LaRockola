@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Rockola - Noticias</title>
+    <link rel="stylesheet" type="text/css" href="/styles/noticias.css" />
+    <link rel="icon" href="./images/lricon.ico" />
+    <script
+      src="https://kit.fontawesome.com/bd6bb5de35.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <a class="logo a_header_y_footer" href="/home.html" id="logoHeader">
+        <!-- Acá logo y su ID para que en el CSS haga el "breathe"-->
+        <img src="images/logotest.png" alt="Logo Rockola" />
+        <h2 class="nombre_pagina">LA ROCKOLA</h2>
+      </a>
+      <nav class="nav_header">
+        <a href="home.html" class="nav-link nav_home a_header_y_footer"
+          ><i class="iconos_nav fa-solid fa-house"></i>Home</a
+        >
+        <a href="noticias.html" class="nav-link nav_news a_header_y_footer"
+          ><i class="iconos_nav fa-solid fa-newspaper"></i>Noticias</a
+        >
+        <a href="ranking.html" class="nav-link nav_ranks a_header_y_footer"
+          ><i class="iconos_nav fa-solid fa-ranking-star"></i>Recomendados</a
+        >
+        <a href="formulario.html" class="nav-link nav_faqs a_header_y_footer"
+          ><i class="iconos_nav fa-solid fa-envelope"></i>Contacto & FAQ</a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <h1 id="queQueres">Qué noticias querés ver hoy?</h1>
+      <select id="dropdown-menu">
+        <option value="">Seleccioná</option>
+        <option value="noticias rock">Rock</option>
+        <option value="noticias pop">Pop</option>
+        <option value="noticias trap">Trap</option>
+        <option value="noticias metal">Metal</option>
+      </select>
+
+      <section id="news-articles"></section>
+    </main>
+
+    <footer>
+      <section id="section_row_footer">
+        <section id="section_footer_navega">
+          <h3 class="titulos_footer">Navega!</h3>
+          <a href="home.html">Home</a>
+          <a href="noticias.html">Noticias</a>
+          <a href="ranking.html">Recomendados</a>
+        </section>
+        <section id="section_footer_contacto">
+          <h3 class="titulos_footer">Contactanos!</h3>
+          <a href="./formulario.html#link_faq_section">FAQ</a>
+          <a href="./formulario.html#formulario">Contacto</a>
+        </section>
+        <section id="section_footer_redes">
+          <h3 class="titulos_footer">Seguinos!</h3>
+          <a
+            class="a_header_y_footer"
+            href="https://www.facebook.com/"
+            target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            class="a_header_y_footer"
+            href="https://www.instagram.com/"
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            class="a_header_y_footer"
+            href="https://www.twitter.com/"
+            target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </section>
+        <section id="section_footer_copyright">
+          <p>Codo a Codo 4.0 - Mayo 2023 - Comisión 23038</p>
+        </section>
+      </section>
+    </footer>
+  </body>
+  <script src="/js/noticias.js"></script>
+</html>

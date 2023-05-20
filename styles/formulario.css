@@ -1,0 +1,468 @@
+@import url("https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,wght@0,400;1,200&family=Shadows+Into+Light&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Pathway Extreme", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: url(/images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #262a62;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/*header*/
+
+.a_header_y_footer {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  display: flex;
+  height: 6rem;
+  background-color: rgb(238, 144, 20);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  animation: breathe 2s infinite;
+}
+
+.logo img {
+  height: 80px;
+  margin-right: 10x;
+}
+
+.nombre_pagina {
+  /*Esto afecta al texto "LA ROCKOLA"*/
+  font-family: "Shadows Into Light";
+  text-align: left;
+  text-decoration: underline;
+  font-size: 1.6rem;
+  margin-left: -1rem;
+  font-weight: 1000;
+}
+
+.nav_header a {
+  display: flex;
+  font-weight: 600;
+  padding-right: 0.3rem;
+  align-items: center;
+  text-shadow: 2px 2px rgb(153, 50, 221);
+}
+
+.nav_header a:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.iconos_nav {
+  color: rgb(37, 37, 37);
+  text-decoration: none;
+}
+
+.nav_faqs {
+  /* Modificar esta linea para elegir el html opciones: .nav_home .nav_news .nav_ranks  .nav_faqs*/
+  color: rgb(22, 223, 99);
+  text-shadow: 2px 2px 2px yellow;
+}
+
+#sectionPreForm {
+  display: flex;
+  justify-content: center;
+  /*+*/
+  align-content: center;
+  margin-top: 2rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  border-radius: 10px;
+  border-style: inset;
+  border-color: #e7e7e7;
+  background-color: #f5f5f5;
+  /*background: rgb(84,33,167);
+background: linear-gradient(90deg, rgba(84,33,167,1) 0%, rgba(45,45,219,1) 60%, rgba(48,49,217,1) 85%, rgba(78,90,191,1) 100%);
+     No estoy seguro de usar color plano o gradient.*/
+}
+
+#parrafoPreForm {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+/*Form*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+  margin-bottom: 3rem;
+  padding: 0.2rem;
+  border-style: ridge;
+  border-color: rgb(101, 207, 40);
+  border-radius: 3rem;
+  /*background: rgb(96,14,230); Lo mismo que arriba*/
+  background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 13%,
+    rgba(26, 25, 25, 0.916) 90%
+  );
+}
+fieldset {
+  border-style: none;
+}
+
+form fieldset {
+  margin: 0.4rem;
+}
+
+legend {
+  text-align: center;
+  text-shadow: 1px 1px 1px;
+  padding-bottom: 1.2rem;
+  color: rgb(101, 207, 40);
+}
+
+#infoContacto {
+  color: rgb(101, 207, 40);
+  text-align: center;
+  text-shadow: 1px 1px;
+  margin-bottom: 1rem;
+}
+
+.datosPersonales {
+  margin: 1rem;
+  flex-wrap: wrap;
+}
+
+.datosPersonales label {
+  flex-wrap: wrap;
+  padding-top: 0.2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.1rem;
+  color: rgb(101, 207, 40);
+  text-shadow: 0.2px 0.2px 0.2px;
+}
+
+.datosMotivos {
+  margin: 1rem;
+  flex-wrap: wrap;
+}
+
+.datosMotivos label {
+  flex-wrap: wrap;
+  padding-top: 0.2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.1rem;
+  color: rgb(101, 207, 40);
+  text-shadow: 0.2px 0.2px 0.2px;
+}
+
+#name,
+#lastname,
+#date,
+#email,
+#reason,
+#comments {
+  width: 100%;
+  border-color: rgb(101, 207, 40);
+  border-radius: 1rem;
+  padding: 5px;
+  margin: 5px;
+}
+
+input[type="text"]:focus {
+  background-color: #e7ed98;
+}
+
+input[type="email"]:focus {
+  background-color: #e7ed98;
+}
+
+input[type="date"]:focus {
+  background-color: #e7ed98;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea:focus {
+  background-color: #e7ed98;
+}
+
+select:focus {
+  background-color: #e7ed98;
+}
+
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-around;
+}
+
+.botones button {
+  border-radius: 5px;
+  border: 3px solid rgb(3, 34, 21);
+  cursor: pointer;
+  background-color: rgb(101, 207, 40);
+  color: white;
+  width: 33%;
+}
+
+.botones button:hover {
+  background: linear-gradient(to bottom, #07837d69 5%, #064737 100%);
+}
+
+/*FAQ*/
+
+.titulo_faq {
+  text-align: center;
+  font-size: 2em;
+  margin: 1em;
+  text-shadow: 1px 1px rgb(119, 118, 118);
+  color: white;
+}
+
+.faq-section {
+  padding: 4em 2em;
+}
+
+.faq {
+  list-style: none;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.faq li {
+  background: #ffffff;
+  border-radius: 1rem;
+  border-bottom: 1px #ccc solid;
+}
+
+.faq li:first-child {
+  border-top: 1px #000000 solid;
+  border-radius: 1rem;
+}
+
+.pregunta {
+  padding: 3em 0;
+  border-left: 10px #d44040 solid;
+  border-top: 2px #080808 solid;
+  border-bottom: 2px #000000 solid;
+  border-right: 1px #0d0e0b solid;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: rgba(247, 238, 200, 0.356);
+}
+
+.preguta_faq {
+  font-weight: 600;
+  font-style: bold italic;
+  color: rgb(8, 8, 8); /*Color de la pregunta FaQ*/
+}
+
+.pregunta:hover,
+.pregunta:hover .flechita {
+  border-left-color: #1bdb65;
+}
+
+.flechita {
+  display: inline-block;
+  margin: 0 0.5em;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-left: 10px solid #ff7b00;
+  border-bottom: 6px solid transparent;
+  transition: 0.3s;
+}
+
+.faq p {
+  color: #030303;
+  line-height: 25px;
+  font-style: bold;
+}
+
+.respuesta {
+  overflow: hidden;
+  height: 0;
+  padding: 0 1em 0 3.3em;
+  border-radius: 1rem;
+}
+
+.respuesta-opened {
+  padding: 1em 1em 2em 3.3em;
+  height: initial;
+  border-left: 2px solid rgb(183, 255, 101);
+  background-color: #ffffff;
+}
+
+.flechita-rotated {
+  transform: rotate(90deg);
+}
+
+/*footer*/
+
+footer {
+  display: flex;
+  background-color: black;
+  flex-direction: column;
+  flex: 1;
+}
+
+#section_row_footer {
+  display: flex;
+  background-color: red;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#section_footer_navega,
+#section_footer_contacto,
+#section_footer_redes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  background-color: red;
+  order: 1;
+  margin: 0.3rem;
+  padding: 0.5rem;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+#section_footer_contacto {
+  background-color: red;
+}
+
+#section_footer_redes {
+  background-color: red;
+}
+
+#section_footer_copyright {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  order: 2;
+}
+
+#section_footer_copyright p {
+  display: flex;
+  text-align: center;
+}
+
+@media screen and (min-width: 790px) {
+  footer {
+    bottom: 0;
+    width: 100%;
+  }
+  #section_footer_navega,
+  #section_footer_contacto,
+  #section_footer_redes {
+    width: 25%;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1635px) {
+  #section_footer_navega,
+  #section_footer_contacto,
+  #section_footer_redes {
+    width: 30%;
+    display: flex;
+  }
+}
+
+@keyframes breathe {
+  /* ANIMACION LOGO. CUENTA??*/
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .nav_header {
+    display: flex;
+    margin: 1rem;
+  }
+  .nav_header a {
+    margin: 0.3rem;
+  }
+  .nav_header a:hover {
+    color: white;
+    transform: scale(1.2);
+  }
+
+  .faq-section {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .formulario {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .nombre_pagina {
+    font-size: 1.8rem;
+  }
+  .nav_header {
+    display: flex;
+    margin: 2rem;
+  }
+  .nav_header a {
+    margin: 0.8rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  .nav_header a:hover {
+    color: white;
+    transform: scale(1.4);
+  }
+
+  .formulario {
+    margin-left: 14rem;
+    margin-right: 14rem;
+    margin-bottom: 5rem;
+  }
+}
