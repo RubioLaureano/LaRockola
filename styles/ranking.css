@@ -215,6 +215,10 @@ article button a:hover {
   justify-content: space-evenly;
 }
 
+.h3_animated {
+  animation: breathe 2s infinite;
+}
+
 /*-------------------
 ------- FOOTER------
 ------------------ */
