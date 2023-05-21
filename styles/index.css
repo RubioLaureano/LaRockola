@@ -7,7 +7,11 @@
   font-family: "Pathway Extreme", sans-serif;
 }
 
-/* ESTE ES EL BODY DE NOTICIAS (por las dudas de comodín)*/
+main {
+  /*No sabemos cómo resolver lo del footer sin usar el vh*/
+  min-height: 88vh;
+}
+
 body {
   background-image: url(../images/background.png);
   background-size: cover;
@@ -21,7 +25,6 @@ body {
 }
 
 #primerLinea {
-  /* ESTO ES TEMPORAL PAPU */
   color: rgb(252, 255, 252);
   display: flex;
   justify-content: center;
@@ -60,10 +63,12 @@ body {
   flex-direction: column;
   background-color: rgb(0, 0, 0);
 }
+
 #imagenCaja1,
 #imagenCaja2 {
   display: flex;
 }
+
 #caja1,
 #caja2,
 #caja3 {

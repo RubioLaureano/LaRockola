@@ -19,7 +19,7 @@ body {
 }
 
 main {
-  min-height: 90vh; /* el día 19.5; despues de haber hecho 2 footers, 200 configuraciones distintas. Esto nos solucionó la vida. Por favor, queremos una clase exclusive de VH y Min Height para footers. Todos Amamos el VH*/
+  min-height: 90vh; /* el día 19-5; despues de haber hecho 2 footers, 200 configuraciones distintas. Esto nos solucionó la vida. Por favor, queremos una clase exclusive de VH y Min Height para footers. Todos Amamos el VH*/
 }
 #news-articles {
   display: flex;
@@ -209,6 +209,7 @@ header {
 #espacio_muerto {
   margin-top: 50rem;
 }
+
 /*------------------------
 --------------------------
   A partir de acá FOOTER
@@ -270,12 +271,6 @@ footer {
 }
 
 @media screen and (min-width: 790px) {
-  /*footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-  */
   #section_footer_navega,
   #section_footer_contacto,
   #section_footer_redes {
@@ -285,11 +280,6 @@ footer {
 }
 
 @media screen and (min-width: 1635px) {
-  /*footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  } */
   #section_footer_navega,
   #section_footer_contacto,
   #section_footer_redes {
