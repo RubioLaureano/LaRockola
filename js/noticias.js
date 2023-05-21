@@ -31,7 +31,8 @@ dropdownMenu.addEventListener("change", function () {
         html += '<a href="' + articles[i].url + '">Leer más</a>'; // Acá arma el hipervínculo a la "source" de la noticia
         html += "</section>"; // Termina de armar la section
       }
-      newsArticles.innerHTML = html; // Acá hace la magia, que sería actualizar el "news-article" (que está almacenado en la variable "newsArticles" y muestra por fin las noticias)
+      newsArticles.innerHTML = html; // Acá hace la magia, que sería actualizar el "news-article" (que está
+      // almacenado en la variable "newsArticles" y muestra por fin las noticias en el html)
     })
     .catch(function (error) {
       // Con catch agarramos los errores que pueda llegar a tener el código al llamar a la API
