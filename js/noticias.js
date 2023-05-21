@@ -11,7 +11,7 @@ dropdownMenu.addEventListener("change", function () {
   var selectedTag = dropdownMenu.value; // Acá almacenamos lo que el usuario eligió
   var apiKey = "52aa1b254a67401f877c5d029e835ada"; // Acá guardamos el token de la API en otra variable
   var url =
-    "http://newsapi.org/v2/everything?q=" +
+    "https://newsapi.org/v2/everything?q=" +
     selectedTag +
     " music&language=es&apiKey=" +
     apiKey; // Esto alo que hace es armar la URL para tirarle la request a NewsAPI
