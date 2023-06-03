@@ -232,7 +232,7 @@ footer {
 
 #section_row_footer {
   display: flex;
-  background-color: red;
+  background-color: rgb(238, 144, 20);
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
@@ -246,7 +246,7 @@ footer {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  background-color: red;
+  background-color: rgb(238, 144, 20);
   order: 1;
   margin: 0.3rem;
   padding: 0.5rem;
@@ -255,23 +255,44 @@ footer {
 }
 
 #section_footer_contacto {
-  background-color: red;
+  background-color: rgb(238, 144, 20);
 }
 
 #section_footer_redes {
-  background-color: red;
+  background-color: rgb(238, 144, 20);
 }
 
 #section_footer_copyright {
   display: flex;
   flex-direction: column;
-  background-color: red;
+  background-color: rgb(238, 144, 20);
   order: 2;
 }
 
 #section_footer_copyright p {
   display: flex;
   text-align: center;
+}
+
+.titulos_footer {
+  font-weight: 1000;
+  text-decoration: underline;
+  text-shadow: 0.2px 0.2px  black;
+  
+}
+
+footer a{
+  text-decoration: none;
+  font-family: "Pathway Extreme", sans-serif;
+  color: black;
+  text-shadow: 1px 1px rgb(153, 50, 221);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  color: white;
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 790px) {

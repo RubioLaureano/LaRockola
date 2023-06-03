@@ -24,6 +24,70 @@ body {
   flex-direction: column;
 }
 
+/*---Header ---*/
+
+.a_header_y_footer {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  display: flex;
+  height: 6rem;
+  background-color: rgb(238, 144, 20);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  animation: breathe 2s infinite;
+}
+
+.logo img {
+  height: 80px;
+  margin-right: 10x;
+}
+
+.nombre_pagina {
+  /*Esto afecta al texto "LA ROCKOLA"*/
+  font-family: "Shadows Into Light";
+  text-align: left;
+  text-decoration: underline;
+  font-size: 1.6rem;
+  margin-left: -1rem;
+  font-weight: 1000;
+}
+
+.nav_header a {
+  display: flex;
+  font-weight: 600;
+  padding-right: 0.3rem;
+  align-items: center;
+  text-shadow: 2px 2px rgb(153, 50, 221);
+}
+
+.nav_header a:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.iconos_nav {
+  color: rgb(37, 37, 37);
+  text-decoration: none;
+}
+
+.nav_home {
+  /* Modificar esta linea para elegir el html opciones: .nav_home .nav_news .nav_ranks  .nav_faqs*/
+  color: rgb(22, 223, 99);
+  text-shadow: 2px 2px 2px yellow;
+}
+
+
+/*Termina el header*/
+
 #primerLinea {
   color: rgb(252, 255, 252);
   display: flex;
@@ -153,7 +217,7 @@ footer {
 
 #section_row_footer {
   display: flex;
-  background-color: red;
+  background-color: rgb(238, 144, 20);
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
@@ -167,7 +231,7 @@ footer {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  background-color: red;
+  background-color: rgb(238, 144, 20);
   order: 1;
   margin: 0.3rem;
   padding: 0.5rem;
@@ -176,26 +240,78 @@ footer {
 }
 
 #section_footer_contacto {
-  background-color: red;
+  background-color: rgb(238, 144, 20);
 }
 
 #section_footer_redes {
-  background-color: red;
+  background-color: rgb(238, 144, 20);
 }
 
 #section_footer_copyright {
   display: flex;
   flex-direction: column;
-  background-color: red;
+  background-color: rgb(238, 144, 20);
+  
   order: 2;
 }
+
+
 
 #section_footer_copyright p {
   display: flex;
   text-align: center;
 }
 
-@media screen and (min-width: 790px) and (max-width: 1023px) {
+.titulos_footer {
+  font-weight: 1000;
+  text-decoration: underline;
+  text-shadow: 0.2px 0.2px  black;
+  
+}
+
+footer a{
+  text-decoration: none;
+  font-family: "Pathway Extreme", sans-serif;
+  color: black;
+  text-shadow: 1px 1px rgb(153, 50, 221);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+
+@keyframes breathe {
+  /* ANIMACION LOGO HEADER*/
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .nav_header {
+    display: flex;
+    margin: 1rem;
+  }
+  .nav_header a {
+    margin: 0.3rem;
+  }
+  .nav_header a:hover {
+    color: white;
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (min-width: 790px){
   #section_footer_navega,
   #section_footer_contacto,
   #section_footer_redes {
@@ -209,6 +325,8 @@ footer {
     display: flex;
     margin-left: 20%;
     margin-right: 20%;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
@@ -252,6 +370,25 @@ footer {
     min-width: 230px;
     min-height: auto;
     max-height: 300px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .nombre_pagina {
+    font-size: 1.8rem;
+  }
+  .nav_header {
+    display: flex;
+    margin: 2rem;
+  }
+  .nav_header a {
+    margin: 0.8rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  .nav_header a:hover {
+    color: white;
+    transform: scale(1.4);
   }
 }
 
